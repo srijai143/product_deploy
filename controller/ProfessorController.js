@@ -22,7 +22,7 @@ exports.getSingleProfessor = async (req, res) =>{
         res.status(500).json({msg : err.message})
     }
 }
-/*exports.addNewProfessor = async(req, res) =>{
+exports.addNewProfessor = async(req, res) =>{
     try{
         const professor = await Professor.findOne({prof_id: req.body.prof_id})
         if(!professor){
@@ -36,10 +36,10 @@ exports.getSingleProfessor = async (req, res) =>{
     catch(err){
         res.status(500).json({msg:err.message})
     }
-}*/
+}
 
 
-/*exports.updateProfessor = async (req, res) =>{
+exports.updateProfessor = async (req, res) =>{
     try{
         const professor = req.body
         const fetchedProfessor = await Professor.findOne({prof_id: product.prof_id})
@@ -55,9 +55,9 @@ exports.getSingleProfessor = async (req, res) =>{
         res.status(500).json({msg: err.message})
     }
 }
-    */
+    
 
-/*exports.deleteProfessor = async (req, res)=>{
+exports.deleteProfessor = async (req, res)=>{
     try{
         const professor = await Professor.findOne({prof_id: req.params.id})
         if(product){
@@ -71,4 +71,4 @@ exports.getSingleProfessor = async (req, res) =>{
     catch(err){
         res.status(500).json({msg: err.message})
     }
-} */
+} 
