@@ -12,10 +12,8 @@ mongoose.connect('mongodb+srv://Jai:26jai04@mycluster.emud6.mongodb.net/?retryWr
     .then(()=> console.log('database connected..'))
     .catch((err) => console.log(err))
 
-
-
-// app.get('/', (req, res)=>{
-//     res.send('server reacted...')
-// })
+app.get('/', (req, res)=>{
+    res.send('server reacted...')
+ })
 console.log("new things")
     
