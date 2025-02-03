@@ -8,7 +8,7 @@ app.use("", professorRouter);
 
 app.listen('5000', ()=> console.log('server running on 5000'))
 
-mongoose.connect('mongodb+srv://Jai:26jai04@mycluster.emud6.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster')
+mongoose.connect('mongodb+srv://Jai:jai123@mycluster.emud6.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster')
     .then(()=> console.log('database connected..'))
     .catch((err) => console.log(err))
 
