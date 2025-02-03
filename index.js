@@ -17,4 +17,5 @@ mongoose.connect('mongodb://localhost:27017/prof')
 // app.get('/', (req, res)=>{
 //     res.send('server reacted...')
 // })
+console.log("new things")
     
